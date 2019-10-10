@@ -4,10 +4,10 @@
   </main>
   <footer>
     <ul>
-      <li class="active"><span class="yo-ico">&#xe622;</span>职位</li>
-      <li id="btn-center"><span class="yo-ico">&#xe626;
+      <li data-page="position" class="active"><span class="yo-ico">&#xe622;</span>职位</li>
+      <li data-page="search" id="btn-center"><span class="yo-ico">&#xe626;
       </span>提醒</li>
-      <li><span class="yo-ico">
+      <li data-page="my" ><span class="yo-ico">
         &#xe665;</span>我的</li>
     </ul>
   </footer>

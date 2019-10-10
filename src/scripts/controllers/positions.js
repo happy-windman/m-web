@@ -117,4 +117,4 @@ class Position {
    }
 }
 
-new Position()
+export default new Position()
