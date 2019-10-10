@@ -1,0 +1,66 @@
+http://aui.github.io/art-template/docs/api.html
+
+-- art-template + webpack
+1、npm i art-template art-template-loader
+2、配置
+module: {
+  rules: [
+    {
+      test: /\.art$/,
+      loader: "art-template-loader"
+    }
+  ]
+}
+3、使用
+const layoutView = require('./views/layout.art')
+
+console.log(layoutView({
+  name: 'yangli'
+}))
+
+2019-09-29
+RMVC:
+R-Router
+M-Model
+V-View
+C-Controller
+
+适配方案：
+100%布局
+rem: 单位 root(html) em
+
+filezilla
+
+DPR: device pixel radio  逻辑像素/物理像素
+retina 屏
+
+http://ustbhuangyi.github.io/better-scroll/doc/api.html
+
+2019-10-08
+M站：
+0、架构
+- 前后端分离
+- RMVC
+- art-template
+
+1、工程化： gulp
+- v4.x
+- webserver: gulp-connect
+- packcss: gulp-sass, node-sass
+- packjs: gulp-webstream
+
+2、移动端布局
+- 100%布局：flexbox
+- yo
+- 1px border
+
+3、第三方库
+- better-scroll
+- zepto
+
+
+// hello-there kebab-case
+// helloThere camelCase
+// HelloThere pascalCase
+
+insomina

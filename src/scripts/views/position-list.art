@@ -1,0 +1,25 @@
+
+{{each list}}
+<li class="list-item">
+    <div class="item-title">
+      <div class="item-up">
+        <div class="item-up-left"><h2>{{$value.name}}</h2>
+          <span>{{$value.department_common_name}}</span>
+        </div>
+        <div class="item-up-right"><span>今天</span>
+          <h3>{{$value.salary/1000}}K-{{$value.reach_salary/1000}}K</h3>
+        </div>
+        
+      </div>
+      <div class="item-down">
+          <span class="yo-ico">&#xe61a;
+            </span>{{$value.work_place_text}}
+            <span class="yo-ico">&#xe61c;
+
+              </span>{{$value.work_experience_text}}
+              <span class="yo-ico">&#xe62a;
+                </span>{{$value.education_text}}
+        </div>
+    </div>
+  </li>
+  {{/each}}

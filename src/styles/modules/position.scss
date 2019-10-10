@@ -1,0 +1,122 @@
+.list-container {
+
+
+
+.banner{
+height: 0;
+font-size: 0;
+padding-bottom:50.6%; 
+}
+  nav {
+    position: relative;
+    .banner-block{
+      width: 100%;
+    }
+  
+  }
+
+  ul {
+    width: 96%;
+    margin: .1rem auto 0;
+    padding-bottom: 0px;
+
+    li.list-item {
+      display: flex;
+      width: 100%;
+      background: #fff;
+      border-radius: 4px;
+      margin: 0 auto;
+      overflow: hidden;
+      margin-bottom: 10px;
+      height: .9rem;
+      padding:  0 .1rem;
+      .item-title{
+        padding: 8px 0 4px 0;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around; 
+       
+        .item-up{
+        
+          display: flex;
+          justify-content:space-between;
+          padding-bottom: .05rem;
+          @include border(0 0 1px 0, rgb(58, 58, 58));
+        .item-up-left{
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          h2{@include ellipsis(null,1);
+            font-size: .18rem;
+            font-weight: normal;
+          }
+          span{
+            @include ellipsis(null,1);
+          }
+         
+        }
+        .item-up-right{
+          width: 100%;
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          h3{
+            font-weight: normal;
+            font-size: .16rem;
+            color:orange;
+          }
+         
+        }  
+        }
+
+        .item-down{
+          overflow: hidden;
+          @include ellipsis(null,1);
+          width: 100%;
+          font-size: .12rem;
+          color:#aaa;
+          span{
+            color:orange;
+          }
+        }
+      }
+
+
+
+    }
+  }
+
+  
+}
+
+.head,
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: .4rem;
+  }
+
+  .head img,
+  .foot img {
+    width: .16rem;
+    height: .16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms;
+  }
+
+  .head img {
+    transform: rotate(180deg);
+  }
+
+  .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important;
+  }
+
+  .down {
+    transform: rotate(180deg);
+  }

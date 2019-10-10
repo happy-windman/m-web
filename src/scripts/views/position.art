@@ -1,0 +1,18 @@
+<div class="list-container">
+  <div class="head"><img src="/assets/images/arrow.png"/>刷新</div>
+  <nav>
+      <div class="header-banner">
+          <div class="text-block" >
+            <img src="/assets/images/tianjihr-search-pic.png">请输入关键词
+          </div>
+        </div>
+        
+    <div class="banner"><img class="banner-block" src="/assets/images/banner.jpg"></div>
+  </nav>
+  <ul>
+  </ul>
+  <div class="foot">
+      <img src="/assets/images/arrow.png"/>
+下拉加载更多
+  </div>
+</div>

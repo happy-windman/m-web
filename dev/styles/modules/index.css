@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.header-banner {
+  width: 100%;
+  height: .55rem;
+  padding: .1rem .2rem 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: orange; }
+  .header-banner .text-block {
+    width: 100%;
+    height: .35rem;
+    background: #fff;
+    border-radius: .1rem;
+    position: relative;
+    font-size: .14rem;
+    font-family: '微软雅黑';
+    line-height: .35rem;
+    color: #aaa;
+    text-align: center; }
+    .header-banner .text-block img {
+      display: inline-block;
+      vertical-align: middle;
+      width: .15rem;
+      margin: -3px 4px 0 0; }
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .index-container main {
+    flex: 1;
+    overflow: hidden; }
+  .index-container footer {
+    height: .44rem; }
+    .index-container footer ul {
+      position: relative;
+      height: 100%;
+      display: flex; }
+      .index-container footer ul li {
+        flex: 1;
+        background: #f6f6f6;
+        text-align: center;
+        line-height: .49rem;
+        font-size: .18rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c2cfcc; }
+        .index-container footer ul li span {
+          font-size: .2rem; }
+        .index-container footer ul li.active {
+          color: orange; }
