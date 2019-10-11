@@ -3,7 +3,7 @@ import indexController from '../controllers/index'
 import positionController from '../controllers/positions';
 import searchController from '../controllers/search';
 import myController from '../controllers/my';
-import positions from '../controllers/positions';
+import detailController from '../controllers/detail';
 
 class Router{
     constructor(){
@@ -18,7 +18,8 @@ class Router{
         let pageControllers={
             positionController,
             searchController,
-            myController
+            myController,
+            detailController
             }
             pageControllers[hash+'Controller'].render();
     }
@@ -26,20 +27,30 @@ class Router{
     handlePageload(){
         let currentHash=location.hash.substr(1)||"position";
         indexController.render();
-        location.hash=currentHash;
-        this.renderDOM(currentHash);
-        this.setActive(currentHash);
+        let reg=new RegExp('^\\w+','g');
+        let path=reg.exec(currentHash);
+        this.renderDOM(path);
+        this.setActive(path);
+        location.hash=path;
+        if(path=="detail")
+        {
+            location.hash=currentHash;
+        }
     }
     handleHashchange(){
-        let currentHash=location.hash.substr(1);
-        this.renderDOM(currentHash);
-        this.setActive(currentHash);
-        if(currentHash!="position"){
+        let currentHash=location.hash.substr(1)||"position";
+        let reg=new RegExp('^\\w+','g');
+        let path=reg.exec(currentHash);
+        // console.log(path)
+        this.renderDOM(path);
+        this.setActive(path);
+        if(path!="position"){
             $('#bannerTop').hide()
         }
     }
     
-    setActive(hash){console.log(hash)
+    setActive(hash){
+        // console.log(hash)
         $(`footer li[data-page=${hash}]`).addClass('active').siblings().removeClass('active');
 
     }

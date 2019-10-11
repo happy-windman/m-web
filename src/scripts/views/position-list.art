@@ -1,6 +1,6 @@
 
 {{each list}}
-<li class="list-item">
+<li class="list-item" data-id="{{$value.numberid}}">
     <div class="item-title">
       <div class="item-up">
         <div class="item-up-left"><h2>{{$value.name}}</h2>

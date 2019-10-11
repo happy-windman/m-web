@@ -1,1 +1,19 @@
-<div>my</div>
+<div class="my-container">
+    <div class="top">
+        <div class="headcon"><img src="/assets/images/Photo.png"></div>
+        <a class="login-reg" >登录 / 注册</a>
+    </div>
+    <div class="myList">
+        <ul class="myResume">
+            <li><i class="jianli"></i>我的简历</li>
+            <li><i class="jianli"></i>我的简历</li>
+            <li><i class="jianli"></i>我的简历</li>
+        </ul>
+        <ul class="myResume">
+            <li><i class="jianli"></i>我的简历</li>
+            <li><i class="jianli"></i>我的简历</li>
+            <li><i class="jianli"></i>我的简历</li>
+        </ul>
+    </div>
+
+</div>

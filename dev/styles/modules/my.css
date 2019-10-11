@@ -1,0 +1,17 @@
+.my-container .top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 1.81rem; }
+
+.my-container .login-reg {
+  display: block;
+  font-size: 16px;
+  color: #FFF;
+  line-height: 36px;
+  text-align: center;
+  width: 1.5rem;
+  height: 0.36rem;
+  margin: 20px auto;
+  border: #FFF 2px solid; }

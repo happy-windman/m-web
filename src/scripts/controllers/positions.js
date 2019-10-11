@@ -2,6 +2,7 @@ const positionView = require('../views/position.art')
 const positionListView = require('../views/position-list.art')
 const postionModel = require('../models/postion')
 const BScroll = require('better-scroll')
+import indexController from '../controllers/index'
 
 class Position {
   constructor() {
@@ -18,18 +19,23 @@ class Position {
     })
 
     $('main ul').html(positionListHtml)
+    $('main ul .list-item').on('tap',function(){
+      let id=$(this).attr('data-id')
+      location.hash=`detail/${id}`
+    })
   }
 
 
 
   async render() {
+    indexController.render();
     let that = this;
 
     let result = await postionModel.get({
       pageNo: that.pageNo,
       pageSize: that.pageSize
     })
-
+   
     // 把PositionView 先装填到main里
     let positionHtml = positionView({})
     let $main = $('main')

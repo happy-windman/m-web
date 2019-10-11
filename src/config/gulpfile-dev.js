@@ -26,7 +26,7 @@ function copyassets() {
 
 // 编译sass
 function packSCSS() {
-  return src(['../styles/**/*.scss', '!../styles/yo/**/*.scss'])
+  return src(['../styles/app.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(dest('../../dev/styles/'))
     .pipe(connect.reload())
