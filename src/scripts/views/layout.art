@@ -1,5 +1,9 @@
 <div class="index-container">
-  
+  <div class="header-banner" id="bannerTop">
+    <div class="text-block" >
+      <img src="/assets/images/tianjihr-search-pic.png">请输入关键词
+    </div>
+  </div>
   <main>
   </main>
   <footer>
