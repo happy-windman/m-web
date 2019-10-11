@@ -34,7 +34,9 @@ class Router{
         let currentHash=location.hash.substr(1);
         this.renderDOM(currentHash);
         this.setActive(currentHash);
-        
+        if(currentHash!="position"){
+            $('#bannerTop').hide()
+        }
     }
     
     setActive(hash){console.log(hash)
