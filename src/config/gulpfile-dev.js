@@ -7,39 +7,39 @@ const proxy = require('http-proxy-middleware')
 
 // copyhtml
 function copyhtml() {
-  return src('./src/*.html')
-    .pipe(dest('./dev/'))
+  return src('../*.html')
+    .pipe(dest('../../dev/'))
     .pipe(connect.reload())
 }
 
 // copylibs
 function copylibs() {
-  return src('./src/libs/**/*')
-    .pipe(dest('./dev/libs'))
+  return src('../libs/**/*')
+    .pipe(dest('../../dev/libs'))
 }
 
 // copylibs
 function copyassets() {
-  return src('./src/assets/**/*')
-    .pipe(dest('./dev/assets'))
+  return src('../assets/**/*')
+    .pipe(dest('../../dev/assets'))
 }
 
 // 编译sass
 function packSCSS() {
-  return src(['./src/styles/**/*.scss', '!./src/styles/yo/**/*.scss'])
+  return src(['../styles/**/*.scss', '!../styles/yo/**/*.scss'])
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('./dev/styles/'))
+    .pipe(dest('../../dev/styles/'))
     .pipe(connect.reload())
 }
 
 // JS模块化
 function packJS() {
-  return src('./src/scripts/app.js')
+  return src('../scripts/app.js')
     .pipe(webpack({
       mode: 'development',
-      entry: './src/scripts/app.js',
+      entry: '../scripts/app.js',
       output: {
-        path: path.resolve(__dirname, './dev'),
+        path: path.resolve(__dirname, '/dev'),
         filename: 'app.js'
       },
       module: {
@@ -55,7 +55,7 @@ function packJS() {
         ]
       }
     }))
-    .pipe(dest('./dev/scripts'))
+    .pipe(dest('../../dev/scripts'))
     .pipe(connect.reload())
 }
 
@@ -63,7 +63,7 @@ function packJS() {
 function gulpServer() {
   return connect.server({
     name: 'Dist App',
-    root: './dev',
+    root: '../../dev',
     port: 8000,
     livereload: true,
     middleware: () => {
@@ -82,11 +82,11 @@ function gulpServer() {
 
 // watch
 function watchFiles() {
-  watch('./src/*.html', series(copyhtml))
-  watch('./src/libs/*', series(copylibs))
-  watch('./src/**/*', series(packJS))
-  watch('./src/**/*.scss', series(packSCSS))
-  watch('./src/assets/*', series(copyassets))
+  watch('../*.html', series(copyhtml))
+  watch('../libs/*', series(copylibs))
+  watch('../**/*', series(packJS))
+  watch('../**/*.scss', series(packSCSS))
+  watch('../assets/*', series(copyassets))
 }
 
 exports.default = series(parallel(copyhtml, copyassets, copylibs, packSCSS, packJS), parallel(gulpServer, watchFiles))

@@ -44,6 +44,7 @@ class Position {
     //   // 定义图片对象
     let $imgHead = $('.head img')
     let $imgFoot = $('.foot img')
+    
 
     // bScroll 是BetterScroll实例，将来可以用来调用API
     let bScroll = new BScroll.default($('main').get(0), {
@@ -106,6 +107,8 @@ class Position {
     })
     $('#bannerTop').hide()
     bScroll.on('scroll', function () {
+      if(location.hash=="#position")
+  {
       console.log(this.y)
       let op=Math.abs(this.y/100)
       if(this.y>0){
@@ -124,9 +127,10 @@ class Position {
 
       if (this.maxScrollY > this.y) {
         $imgFoot.addClass('down')
-      }
+      }}
     })
   }
+  
 }
 
 export default new Position()
