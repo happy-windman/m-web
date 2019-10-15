@@ -11,10 +11,15 @@
       </div>
     </div>
     <ul class="search-screen">
-        <li class="">地区筛选<span></span></li>
+        <li class="city">地区筛选<span></span>
+       </li>
         <li class="">职位筛选<span></span></li>
         <li class="">企业筛选<span></span></li>
+        
     </ul>
+    <div class="city-container">
+
+  </div>
     <div class="hot-search">
         <h3>热门搜索</h3>
         <ul>

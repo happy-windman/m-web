@@ -1,0 +1,6 @@
+
+<ul>{{each cityArr}}
+    <li data-cityCode="{{$value.code}}">{{$value.text}}</li>
+    {{/each}}
+    
+</ul>

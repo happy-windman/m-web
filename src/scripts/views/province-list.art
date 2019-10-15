@@ -1,0 +1,14 @@
+<div class="city-block">
+    <div class="province">
+      <ul>
+          {{each provinceArr}}
+        <li data-cityCode="{{$value.code}}">{{$value.text}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="city-list">
+      <ul>
+        
+      </ul>
+    </div>
+  </div>

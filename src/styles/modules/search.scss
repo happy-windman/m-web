@@ -2,13 +2,43 @@
   display: flex;
   flex-flow: column;
   height: 100%;
+
+  .city-block{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 999;
+    li{
+      text-align: center;
+      font-size: .15rem;
+      height: .45rem;
+      line-height: .45rem;
+      color: #606060;
+    }
+    .province{
+      height: 3.3rem;
+      overflow-y: scroll;
+      width: 40%;
+      background: #f1f1f1;
+   
+    }
+    .city-list{
+      height: 3.3rem;
+      overflow-y: scroll;
+      width: 60%;
+      background: #fff;
+    }
+  }
+
+
   header{
     width: 100%;
-    
     background: #ffffff;
     font-size: 18px;
     color: #ff8502;
-   
+
     .search-top{
       width: 100%;
       position: relative;
@@ -42,6 +72,10 @@
           background-position: 0 0;
         }
       }
+     
+     
+      }
+      
    
     }
 
@@ -118,7 +152,8 @@
         border-radius: 0 4px 4px 0;
       }
     }
-  }
+  
+
   main{
     flex: 1;
    overflow: hidden;
@@ -128,6 +163,7 @@
     height: .4rem;
     background: chocolate;
   }
+}
 main{
   ul{
     padding-top: 10px;
@@ -202,6 +238,6 @@ main{
     }
   }
 }
-  
 
-}
+
+

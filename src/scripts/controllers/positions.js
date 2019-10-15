@@ -142,11 +142,11 @@ class Position {
 
     $('#bannerTop').on('tap',function(){
       location.hash=$(this).attr('data-page')
-     console.log( $('#bannerScroll'))
+    
     })
     $('#bannerScroll').on('tap',function(){
       location.hash=$(this).attr('data-page')
-      console.log(2)
+
       
     })
     // $('#root').on('click','#bannerTop',function(){
