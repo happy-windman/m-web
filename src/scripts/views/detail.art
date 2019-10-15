@@ -1,3 +1,117 @@
 <div class="detail-container">
-    detail
+    <header class="detail-header">
+        <a class="return"><img src="https://m.tianjihr.com/images/common/return.png"></a>
+        <ul>
+            <li class="detail-active">职业详情</li>
+            <li>企业职位</li>
+        </ul>
+        <a class="return">举报</a>
+    </header>
+    <main>
+        <div class="detail-scroll">
+            <div class="detail-content">
+                <div class="content2">
+                    <div class="border-radius firm-abstract">
+                        <div class="logo-block"><img
+                                src="{{}}">
+                        </div>
+                        <div class="abstract-title">河南太极开来置业有限公司
+                        </div>
+                        <div class="abstract-info">
+                            <span>郑州市</span><span>&nbsp;/&nbsp;房地产开发|房地产营销策划</span><span>&nbsp;/&nbsp;民营</span>
+                        </div>
+                        <ul class="abstract-data">
+                                <li>
+                                  <strong >30个</strong>
+                                  <p>招聘职位</p>
+                                </li>
+                                <li>
+                                  <strong >96%</strong>
+                                  <p>简历反馈率</p>
+                                </li>
+                                <li>
+                                  <strong >1天</strong>
+                                  <p>简历反馈用时</p>
+                                </li>
+                                <li>
+                                  <strong>今天</strong>
+                                  <p>企业最近登录</p>
+                                </li>
+                              </ul>
+
+                    </div>
+                </div>
+                <div class="content1">
+                    <div class="border-radius job-name">
+                        <div class="between name-block">
+                            <span>{{result.name}}</span><span>{{result.salary/1000}}K-{{result.reach_salary/1000}}K</span>
+                        </div>
+                        <div class="between firm-block"><span>
+                                {{currentCommon}}
+                            </span><span>2019-10-12</span></div>
+                        <div class="main-block">
+                            <span class="yo-ico">&#xe61a;
+                            </span>{{result.work_place_text}}
+                            <span class="yo-ico">&#xe61c;
+                            </span>{{result.work_experience_text}}
+                            <span class="yo-ico">&#xe62a;
+                            </span>{{result.education_text}}
+                        </div>
+                    </div>
+
+                    <div class="border-radius job-address">
+                        <div class="address">
+                            <div class="job-title">
+                                工作地址
+                            </div>
+                            <div class="address-content">{{result.work_address}}</div>
+                        </div>
+                        <div class="address-map">
+                            <img src="https://m.tianjihr.com/images/firm-home/right-map.png">
+                        </div>
+                    </div>
+
+                    <div class="border-radius job-details">
+                        <div class="job-title">
+                            职位详情
+                        </div>
+                        <dl class="detail-cont">
+                            <dt><span></span>岗位职责：</dt>
+                            <dd>
+                                {{result.responsibility}}
+                            </dd>
+                        </dl>
+
+                        <dl class="detail-cont">
+                            <dt><span></span>任职资格：</dt>
+                            <dd>{{result.qualification}}</dd>
+                        </dl>
+
+                    </div>
+
+                    <div class="border-radius job-manage">
+                        <div class="job-title">
+                            简历处理指数
+                        </div>
+                        <ul>
+                            <li><span>26%</span><span>简历处理率</span></li>
+                            <li><span>5天</span><span>简历平均处理用时</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="detail-list">
+
+                </ul>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="keep">
+            <span></span>
+        </div>
+        <div class="handle">投递简历</div>
+    </footer>
 </div>

@@ -18,10 +18,14 @@ class Position {
       list
     })
 
-    $('main ul').html(positionListHtml)
-    $('main ul .list-item').on('tap',function(){
+    $('main .list-container ul').html(positionListHtml)
+    console.log($('main ul .list-container .list-item'))
+    $('.list-container .list-item').on('tap',function(){
+      let currentCommon=$(this).find('.item-up-left span').html()
+      $('#root').attr('date-common',currentCommon)
       let id=$(this).attr('data-id')
       location.hash=`detail/${id}`
+      console.log(1)
     })
   }
 
@@ -53,15 +57,15 @@ class Position {
     
 
     // bScroll 是BetterScroll实例，将来可以用来调用API
-    let bScroll = new BScroll.default($('main').get(0), {
-      probeType:3
+    let bScroll = new BScroll.default($('.index-container main').get(0), {
+      probeType:3,
     })
 
-    //   // 开始要隐藏下拉刷新的div
+      // 开始要隐藏下拉刷新的div
     bScroll.scrollBy(0, -40)
     
     bScroll.on('scrollEnd', async function () {
-      // // 下拉刷新
+      // 下拉刷新
 
       if (this.y >= 0) {
 
@@ -135,6 +139,22 @@ class Position {
         $imgFoot.addClass('down')
       }}
     })
+
+    $('#bannerTop').on('tap',function(){
+      location.hash=$(this).attr('data-page')
+     console.log( $('#bannerScroll'))
+    })
+    $('#bannerScroll').on('tap',function(){
+      location.hash=$(this).attr('data-page')
+      console.log(2)
+      
+    })
+    // $('#root').on('click','#bannerTop',function(){
+    //   location.hash=$(this).attr('data-page')
+    // })
+    // $('#root').on('click','#bannerScroll',function(){
+    //   location.hash=$(this).attr('data-page')
+    // })
   }
   
 }

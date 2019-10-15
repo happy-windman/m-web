@@ -1,0 +1,207 @@
+.search-container{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  header{
+    width: 100%;
+    
+    background: #ffffff;
+    font-size: 18px;
+    color: #ff8502;
+   
+    .search-top{
+      width: 100%;
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: .53rem;
+    }
+    .search-screen{
+      line-height: .49rem;
+      color:  #606060;
+      font-size: .16rem;
+      background: #fff;
+      height:.49rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @include border(1px 0 1px 0,#ccc,solid);
+      li{
+        flex: 1;
+        text-align: center;
+        span{
+          display: inline-block;
+          width: .16rem;
+          height:.09rem;
+          vertical-align: middle;
+          margin: -3px 0 0 8px;
+          background: url(https://m.tianjihr.com/images/home/search-btn.png) no-repeat;
+          background-size: .16rem auto;
+          background-position: 0 0;
+        }
+      }
+   
+    }
+
+    .hot-search{
+      background: #f1f1f1;
+      width: 100%;
+      ul{
+        width: 90%;
+        height: 1.28rem;
+        margin: 0 auto;
+        overflow: hidden;
+        
+        li{
+          float: left;
+          margin: 0 4% 10px 0;
+          a{
+            display: inline-block;
+            padding: 0 10px;
+            height: .34rem;
+            line-height: .32rem;
+            font-size: .15rem;
+            color: #606060;
+            border: 1px solid #ff8502;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        }
+      }
+        h3{
+        width: 90%;
+        font-size: .16rem;
+        line-height: .46rem;
+        color: #606060;
+        font-weight: normal;
+        margin: 0 auto;
+        }
+    }
+    .return{
+      left: 23px;
+      top: 5px;
+      width: .42rem;
+      height: .42rem;
+      position: absolute;
+      img{
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin-top: 12px;
+      }
+    }
+    .search-block{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 78%;
+      .text-block{
+        width: 88%;
+        height: .35rem;
+        padding: 0 0 0 10px;
+        font-size: 0.14rem;
+        color: #303030;
+        box-sizing: border-box;
+        border: 1px solid #d2d2d2;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+      }
+      .submit{
+        border: 0;
+        width: 12%;
+        height: 35px;
+        background: #ff8502 url(https://m.tianjihr.com/images/home/tianjihr-home-search-pic.png) no-repeat center center;
+        background-size: 20px 20px;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+  main{
+    flex: 1;
+   overflow: hidden;
+  
+  }
+  footer{
+    height: .4rem;
+    background: chocolate;
+  }
+main{
+  ul{
+    padding-top: 10px;
+    width: 96%;
+    margin: 0 auto ;
+    padding-bottom: 0px;
+  
+
+   .list-item {
+      display: flex;
+      width: 100%;
+      background: #fff;
+      border-radius: 4px;
+      margin: 0 auto;
+      overflow: hidden;
+      margin-bottom: 10px;
+      height: .9rem;
+      padding:  0 .1rem;
+      .item-title{
+        padding: 8px 0 4px 0;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around; 
+       
+        .item-up{
+        
+          display: flex;
+          justify-content:space-between;
+          padding-bottom: .05rem;
+          @include border(0 0 1px 0, rgb(58, 58, 58));
+        .item-up-left{
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          h2{@include ellipsis(null,1);
+            font-size: .18rem;
+            font-weight: normal;
+          }
+          span{
+            @include ellipsis(null,1);
+          }
+         
+        }
+        .item-up-right{
+          width: 100%;
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          h3{
+            font-weight: normal;
+            font-size: .16rem;
+            color:orange;
+          }
+         
+        }  
+        }
+
+        .item-down{
+          overflow: hidden;
+          @include ellipsis(null,1);
+          width: 100%;
+          font-size: .12rem;
+          color:#aaa;
+          span{
+            color:orange;
+          }
+        }
+      }
+    }
+  }
+}
+  
+
+}

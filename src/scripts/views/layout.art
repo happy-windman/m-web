@@ -1,5 +1,5 @@
 <div class="index-container">
-  <div class="header-banner" id="bannerTop">
+  <div class="header-banner" id="bannerTop" data-page="search">
     <div class="text-block" >
       <img src="/assets/images/tianjihr-search-pic.png">请输入关键词
     </div>
@@ -9,7 +9,7 @@
   <footer>
     <ul>
       <li data-page="position" class="active"><span class="yo-ico">&#xe622;</span>职位</li>
-      <li data-page="search" id="btn-center"><span class="yo-ico">&#xe626;
+      <li data-page="news" id="btn-center"><span class="yo-ico">&#xe626;
       </span>提醒</li>
       <li data-page="my" ><span class="yo-ico">
         &#xe665;</span>我的</li>

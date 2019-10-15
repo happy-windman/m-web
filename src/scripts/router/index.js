@@ -1,9 +1,10 @@
 
 import indexController from '../controllers/index'
 import positionController from '../controllers/positions';
-import searchController from '../controllers/search';
+import newsController from '../controllers/news';
 import myController from '../controllers/my';
 import detailController from '../controllers/detail';
+import searchController from '../controllers/search';
 
 class Router{
     constructor(){
@@ -17,9 +18,11 @@ class Router{
     renderDOM(hash){
         let pageControllers={
             positionController,
-            searchController,
+            newsController,
             myController,
-            detailController
+            detailController,
+            searchController
+            
             }
             pageControllers[hash+'Controller'].render();
     }
@@ -28,14 +31,15 @@ class Router{
         let currentHash=location.hash.substr(1)||"position";
         indexController.render();
         let reg=new RegExp('^\\w+','g');
-        let path=reg.exec(currentHash);
+        let path=reg.exec(currentHash); 
+        
         this.renderDOM(path);
         this.setActive(path);
         location.hash=path;
         if(path=="detail")
-        {
-            location.hash=currentHash;
-        }
+            {
+                location.hash=currentHash;
+            }
     }
     handleHashchange(){
         let currentHash=location.hash.substr(1)||"position";

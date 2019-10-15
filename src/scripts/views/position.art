@@ -1,7 +1,7 @@
 <div class="list-container">
   <div class="head"><img src="/assets/images/arrow.png"/>刷新</div>
   <nav>
-      <div class="header-banner" id="bannerScroll">
+      <div class="header-banner" id="bannerScroll" data-page="search">
           <div class="text-block" >
             <img src="/assets/images/tianjihr-search-pic.png">请输入关键词
           </div>

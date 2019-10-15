@@ -1,1 +1,62 @@
-<div>search</div>
+<div class="search-container">
+  <header>
+    <div class="search-top">
+      <a class="return">
+        <img src="https://m.tianjihr.com/images/common/return.png">
+      </a>
+      <div class="search-block">
+        <input class="text-block" type="text" placeholder="请输入关键词">
+        <input class="submit" type="submit" value="1">
+        <div class="delete-record"></div>
+      </div>
+    </div>
+    <ul class="search-screen">
+        <li class="">地区筛选<span></span></li>
+        <li class="">职位筛选<span></span></li>
+        <li class="">企业筛选<span></span></li>
+    </ul>
+    <div class="hot-search">
+        <h3>热门搜索</h3>
+        <ul>
+          {{each hotList}}
+          <li class="hot-keyword"><a  class="keyword-binding">{{$value.keywords}}</a></li>
+         {{/each}}
+        </ul>
+    </div>
+  </header>
+  <main>
+    <div class="search-scroll">
+        <div class="head"><img src="/assets/images/arrow.png"/>刷新</div>
+      <ul>
+       
+        <!-- <li class="list-item" data-id="">
+              <div class="item-title">
+                <div class="item-up">
+                  <div class="item-up-left"><h2>222</h2>
+                    <span>222</span>
+                  </div>
+                  <div class="item-up-right"><span>今天</span>
+                    <h3></h3>
+                  </div>
+                  
+                </div>
+                <div class="item-down">
+                    <span class="yo-ico">&#xe61a;
+                      </span>33
+                      <span class="yo-ico">&#xe61c;
+          333
+                        </span>
+                        <span class="yo-ico">&#xe62a;
+                         444 </span>
+                  </div>
+              </div>
+            </li> -->
+      </ul>
+      <div class="foot">
+          <img src="/assets/images/arrow.png"/>
+    下拉加载更多
+      </div>
+    </div>
+  </main>
+  <!-- <footer>3</footer> -->
+</div>
