@@ -799,7 +799,7 @@ a {
 
 .list-container ul {
   width: 96%;
-  margin: .1rem auto 0;
+  margin: 0 auto;
   padding-bottom: 0px; }
   .list-container ul li.list-item {
     display: flex;
@@ -1013,7 +1013,8 @@ a {
           -webkit-transform: scale(0.33333);
           transform: scale(0.33333); } }
   .my-container .myList .myResume:nth-child(2) {
-    padding-top: 0px; }
+    padding-top: 0px;
+    padding-bottom: .1rem; }
   .my-container .myList li {
     flex: 1;
     display: flex;
@@ -1135,7 +1136,7 @@ a {
         width: 50%;
         height: 50%; }
   .detail-container main {
-    margin: .1rem auto;
+    margin: 0 auto;
     flex: 1;
     overflow: hidden; }
     .detail-container main .detail-scroll {
@@ -1166,6 +1167,8 @@ a {
       color: #fff;
       font-size: .16rem; }
   .detail-container .detail-content {
+    box-sizing: content-box;
+    padding-top: .1rem;
     width: 96%;
     margin: 0 auto; }
     .detail-container .detail-content .between {
@@ -1180,31 +1183,33 @@ a {
       display: flex;
       padding: 0 .08rem;
       flex-flow: column; }
-    .detail-container .detail-content .job-name .name-block {
-      margin-top: .05rem;
-      line-height: .36rem;
-      font-size: .18rem; }
-      .detail-container .detail-content .job-name .name-block span:nth-child(2) {
-        color: #ff8502; }
-    .detail-container .detail-content .job-name .firm-block {
-      color: #606060;
-      line-height: .35rem;
-      font-size: .14rem; }
-      .detail-container .detail-content .job-name .firm-block span:nth-child(2) {
-        color: #ccc;
-        font-size: .12rem; }
-    .detail-container .detail-content .job-name .main-block {
-      display: flex;
-      align-items: center;
-      font-size: .14rem;
-      color: #aaa;
-      padding-bottom: .1rem; }
-      .detail-container .detail-content .job-name .main-block span {
-        font-size: .16rem;
-        color: #ff8502;
-        margin: 0 .05rem 0 0.1rem; }
-      .detail-container .detail-content .job-name .main-block span:nth-child(1) {
-        margin-left: 0; }
+    .detail-container .detail-content .job-name {
+      margin-top: 0; }
+      .detail-container .detail-content .job-name .name-block {
+        margin-top: .05rem;
+        line-height: .36rem;
+        font-size: .18rem; }
+        .detail-container .detail-content .job-name .name-block span:nth-child(2) {
+          color: #ff8502; }
+      .detail-container .detail-content .job-name .firm-block {
+        color: #606060;
+        line-height: .35rem;
+        font-size: .14rem; }
+        .detail-container .detail-content .job-name .firm-block span:nth-child(2) {
+          color: #ccc;
+          font-size: .12rem; }
+      .detail-container .detail-content .job-name .main-block {
+        display: flex;
+        align-items: center;
+        font-size: .14rem;
+        color: #aaa;
+        padding-bottom: .1rem; }
+        .detail-container .detail-content .job-name .main-block span {
+          font-size: .16rem;
+          color: #ff8502;
+          margin: 0 .05rem 0 0.1rem; }
+        .detail-container .detail-content .job-name .main-block span:nth-child(1) {
+          margin-left: 0; }
     .detail-container .detail-content .job-title {
       position: relative;
       font-size: .16rem;
@@ -1292,6 +1297,8 @@ a {
           line-height: 40px;
           color: #ff8502; }
     .detail-container .detail-content .detail-list {
+      margin: 0;
+      width: 100%;
       margin-top: 0.15rem; }
       .detail-container .detail-content .detail-list li.list-item {
         display: flex;
@@ -1381,6 +1388,7 @@ a {
     display: none;
     width: 100%; }
     .detail-container .content2 .firm-abstract {
+      margin-top: 0;
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -1390,7 +1398,7 @@ a {
         justify-content: center;
         align-content: center; }
         .detail-container .content2 .firm-abstract .logo-block img {
-          width: 1.4rem;
+          width: 0.7rem;
           height: .7rem; }
       .detail-container .content2 .firm-abstract .abstract-title {
         text-align: center;

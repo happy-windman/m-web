@@ -58,7 +58,7 @@
 
     }
     main{
-       margin: .1rem auto;
+       margin: 0 auto;
         flex: 1;
         overflow: hidden;
         .detail-scroll{
@@ -98,6 +98,8 @@
         } 
     }
     .detail-content{
+        box-sizing: content-box;
+        padding-top: .1rem;
         width: 96%;
         margin: 0 auto ;
         .between{
@@ -116,6 +118,7 @@
             flex-flow:column;
         }
         .job-name{
+            margin-top:0;
             .name-block{ 
                 margin-top: .05rem;
                 line-height: .36rem;
@@ -228,6 +231,8 @@
         }
 
         .detail-list {
+            margin: 0;
+            width: 100%;
             margin-top:0.15rem;
             li.list-item {
               display: flex;
@@ -303,6 +308,7 @@
         display: none;
         width: 100%;
         .firm-abstract{
+            margin-top: 0;
             display: flex;
             flex-flow: column;
             justify-content: center;
@@ -312,7 +318,7 @@
                 justify-content: center;
             align-content: center;
                 img{
-                    width: 1.4rem;
+                    width: 0.7rem;
                 height: .7rem;
                 }
                 

@@ -31,7 +31,7 @@
   </header>
   <main>
     <div class="search-scroll">
-        <div class="head"><img src="/assets/images/arrow.png"/>刷新</div>
+        <!-- <div class="head"><img src="/assets/images/arrow.png"/>刷新</div> -->
       <ul>
        
         <!-- <li class="list-item" data-id="">

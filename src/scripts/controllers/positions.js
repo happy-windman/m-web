@@ -2,7 +2,7 @@ const positionView = require('../views/position.art')
 const positionListView = require('../views/position-list.art')
 const postionModel = require('../models/postion')
 const BScroll = require('better-scroll')
-import indexController from '../controllers/index'
+import indexController from './index'
 
 class Position {
   constructor() {
@@ -13,6 +13,16 @@ class Position {
     this.pageSize = 10
   }
 
+  detailGo(){
+    $('.list-item').on('tap',function(){
+      let currentCommon=$(this).find('.item-up-left span').html()
+      $('#root').attr('date-common',currentCommon)
+      let id=$(this).attr('data-id')
+      location.hash=`detail/${id}`
+      console.log(1)
+    })
+  }
+
   renderer(list) {
     let positionListHtml = positionListView({
       list
@@ -20,13 +30,8 @@ class Position {
 
     $('main .list-container ul').html(positionListHtml)
     console.log($('main ul .list-container .list-item'))
-    $('.list-container .list-item').on('tap',function(){
-      let currentCommon=$(this).find('.item-up-left span').html()
-      $('#root').attr('date-common',currentCommon)
-      let id=$(this).attr('data-id')
-      location.hash=`detail/${id}`
-      console.log(1)
-    })
+
+    this.detailGo();
   }
 
 

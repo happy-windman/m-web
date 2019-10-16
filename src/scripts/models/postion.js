@@ -8,12 +8,13 @@ module.exports = {
     })
   },
   getSearch({
-    keyword,
+    keyword='土木工程',
+    workplace,
     pageNo=0,
     pageSize=10,
   }) {
       return $.ajax({
-        url: `/api/position/searcher?keywords=${keyword}&work_place=&salary=0-100000&sort=-refresh_time&offset=${pageNo}&limit=${pageSize}`
+        url: `/api/position/searcher?keywords=${keyword}&work_place=${workplace}&salary=0-100000&sort=-refresh_time&offset=${pageNo}&limit=${pageSize}`
       })
     },
     getKeyword(){
