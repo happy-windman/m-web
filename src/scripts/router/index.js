@@ -1,7 +1,7 @@
 
 import indexController from '../controllers/index'
 import positionController from '../controllers/positions';
-import newsController from '../controllers/news';
+import loginController from '../controllers/login';
 import myController from '../controllers/my';
 import detailController from '../controllers/detail';
 import searchController from '../controllers/search';
@@ -18,7 +18,7 @@ class Router{
     renderDOM(hash){
         let pageControllers={
             positionController,
-            newsController,
+            loginController,
             myController,
             detailController,
             searchController

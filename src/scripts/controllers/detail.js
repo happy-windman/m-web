@@ -12,7 +12,8 @@ class Detail{
 
         //获取数据
         let result=await detailModel.get(id[0]);
-        console.log(result.name)
+        // console.log(result)
+        
         //相关数据的ID
         let  similarDataId=result.post_type;
         let resultList=await detailModel.getList(similarDataId);

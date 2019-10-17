@@ -3,10 +3,12 @@
 <li class="list-item" data-id="{{$value.numberid}}">
     <div class="item-title">
       <div class="item-up">
-        <div class="item-up-left"><h2>{{$value.name}}</h2>
-          <span>{{$value.department_common_name}}</span>
+        <div class="item-up-left"><h2>{{#$value.name}}</h2>
+          <span>{{#$value.department_common_name}}</span>
         </div>
-        <div class="item-up-right"><span>今天</span>
+        <div class="item-up-right"><span>
+          {{$value.refresh_time.substr(0,10)}}
+           </span>
           <h3>{{$value.salary/1000}}K-{{$value.reach_salary/1000}}K</h3>
         </div>
         

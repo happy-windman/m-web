@@ -37,6 +37,8 @@ class Position {
 
 
   async render() {
+   
+    
     indexController.render();
     let that = this;
 
@@ -67,6 +69,7 @@ class Position {
     })
 
       // 开始要隐藏下拉刷新的div
+      bScroll.refresh()
     bScroll.scrollBy(0, -40)
     
     bScroll.on('scrollEnd', async function () {
@@ -80,14 +83,14 @@ class Position {
           pageNo: 0,
           pageSize: 1
         })
-
+        
         let list = result.list
 
         // 1. 将原来数据list和现在返回的数据做拼接，
         // 2.重新渲染
         that.list = [...list, ...that.list]
         that.renderer(that.list)
-
+        bScroll.refresh()
         bScroll.scrollBy(0, -40)
         $imgHead.attr('src', '/assets/images/arrow.png')
         $imgHead.removeClass('up')

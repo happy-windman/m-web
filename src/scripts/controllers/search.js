@@ -67,12 +67,11 @@ class search {
   }
 
   async renderList() {
-    console.log(111111111)
     let that = this;
     $('.search-scroll').show();
     $('.hot-search').hide();
     $('.search-screen').show();
-    // this.keyword = $('.search-block .text-block').val();
+    
    
 
     if ($('.search-block .text-block').val()!='')
@@ -95,6 +94,7 @@ class search {
     this.bScroll.scrollTo(0, 0)
     positionsController.detailGo();
     // $('.city').html(`${this.workplace}<span></span>`)
+     $('.search-block .text-block').val(this.keyword);
   }
   async render() {
 

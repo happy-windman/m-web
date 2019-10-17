@@ -871,6 +871,10 @@ a {
           text-align: right;
           display: flex;
           flex-direction: column; }
+          .list-container ul li.list-item .item-title .item-up .item-up-right span {
+            color: #ccc;
+            font-size: .12rem;
+            margin-bottom: 0.05rem; }
           .list-container ul li.list-item .item-title .item-up .item-up-right h3 {
             font-weight: normal;
             font-size: .16rem;
@@ -1056,6 +1060,126 @@ a {
     height: .55rem;
     background: url(/assets/images/tianjihr-jianli.png) no-repeat;
     background-size: 100% 100%; }
+
+.login-container {
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  background: url(https://m.tianjihr.com/images/login/tianjihr-login-bg1.png) no-repeat right 60px;
+  background-size: 50%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-flow: column; }
+  .login-container a {
+    color: #ff8502;
+    font-size: .16rem; }
+  .login-container .login-look {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end; }
+    .login-container .login-look img {
+      display: block;
+      width: 0.15rem;
+      height: 0.15rem;
+      margin: 5px; }
+  .login-container .login-logo {
+    width: 100%;
+    display: flex;
+    height: 1.8rem;
+    align-items: center;
+    justify-content: center; }
+    .login-container .login-logo a {
+      display: flex;
+      justify-content: center; }
+    .login-container .login-logo img {
+      width: 50%; }
+  .login-container .login-cont {
+    background: #fff;
+    border: 1px #d2d2d2 solid;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    display: flex;
+    flex-flow: column;
+    align-content: center; }
+    .login-container .login-cont .label {
+      height: .5rem;
+      width: 100%;
+      border-bottom: 1px solid #d2d2d2;
+      display: flex; }
+      .login-container .login-cont .label .code {
+        width: 30%;
+        height: .33rem;
+        font-size: .14rem;
+        border-radius: 3px;
+        background: #D5D5D5;
+        color: #fff;
+        margin: 8px 3% 0 0; }
+      .login-container .login-cont .label #eyes {
+        width: 13%;
+        height: 100%;
+        background: url("https://m.tianjihr.com/images/login/no-eyes.png") no-repeat center center;
+        background-size: 20px auto; }
+      .login-container .login-cont .label img {
+        width: 100%;
+        height: 100%; }
+      .login-container .login-cont .label input {
+        display: block;
+        border: none;
+        width: 72%;
+        height: 49px;
+        font-size: 16px;
+        color: #303030;
+        outline: none; }
+      .login-container .login-cont .label .login-pic {
+        width: 20px;
+        height: 20px;
+        margin: 15px 4% 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .login-container .login-cont .label:last-child {
+        border: 0; }
+  .login-container .login-submit {
+    display: block;
+    width: 100%;
+    height: .5rem;
+    font-size: .16rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    background: #ff8502;
+    margin: 24px auto; }
+  .login-container .login-type {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+  .login-container .login-jump {
+    margin-top: 20%;
+    height: .3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .login-container .login-jump .middle {
+      background: #EF7B02;
+      display: block;
+      width: 1px;
+      height: .25rem;
+      margin: 0 .2rem; }
+  .login-container #register-block {
+    text-align: center; }
+    .login-container #register-block a {
+      font-size: .14rem; }
+    .login-container #register-block .register-agreement {
+      margin-bottom: .2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .detail-container {
   display: flex;
@@ -1662,6 +1786,9 @@ main ul {
     margin-bottom: 10px;
     height: .9rem;
     padding: 0 .1rem; }
+    main ul .list-item strong {
+      color: orange;
+      font-weight: normal; }
     main ul .list-item .item-title {
       padding: 8px 0 4px 0;
       overflow: hidden;
@@ -1722,6 +1849,10 @@ main ul {
           text-align: right;
           display: flex;
           flex-direction: column; }
+          main ul .list-item .item-title .item-up .item-up-right span {
+            color: #ccc;
+            font-size: .12rem;
+            margin-bottom: 0.05rem; }
           main ul .list-item .item-title .item-up .item-up-right h3 {
             font-weight: normal;
             font-size: .16rem;
