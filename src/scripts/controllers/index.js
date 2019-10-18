@@ -16,6 +16,7 @@ class Index {
     $('footer li').on('click',this.bindClick)
     // positionController.render()
    
+
   }
 }
 export default new Index()

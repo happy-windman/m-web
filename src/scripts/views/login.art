@@ -16,7 +16,7 @@
                 <!-- <div class="login-into"> -->
                     <div class="label">
                         <div class="login-pic"><img src="https://m.tianjihr.com/images/login/tianjihr-account-pic.png"></div>
-                        <input class="form-blur-btn" type="text" placeholder="手机号或邮箱" ng-model="loginModel.userName" style="">
+                        <input class="form-blur-btn username"  type="text" placeholder="手机号或邮箱" ng-model="loginModel.userName" style="">
                     </div>
                     <div class="label">
                             <div class="login-pic"><img src="https://m.tianjihr.com/images/login/tianjihr-code-pic.png"></div>
@@ -24,13 +24,13 @@
                             <input class="code" type="button"  value="获取验证码"  disabled="disabled">
                     </div>
                     <div class="label">
-                        <div class="login-pic"><img src="https://m.tianjihr.com/images/login/tianjihr-password-pic.png"></div>
-                        <input class="form-blur-btn" type="password" placeholder="密码">
+                        <div class="login-pic" ><img src="https://m.tianjihr.com/images/login/tianjihr-password-pic.png"></div>
+                        <input class="form-blur-btn password"  type="password" placeholder="密码">
                         <div id="eyes"></div>
                     </div>
                 <!-- </div> -->
         </div>
-
+        <div class="errTip"></div>
         <input class="login-submit" id="register-submit" type="submit" value="注册">
 
         <div class="register-agreement">
@@ -46,16 +46,17 @@
                 <!-- <div class="login-into"> -->
                     <div class="label">
                         <div class="login-pic"><img src="https://m.tianjihr.com/images/login/tianjihr-account-pic.png"></div>
-                        <input class="form-blur-btn" type="text" placeholder="手机号或邮箱" ng-model="loginModel.userName" style="">
+                        <input class="form-blur-btn username"  type="text" placeholder="手机号或邮箱" ng-model="loginModel.userName" style="">
                     </div>
                     <div class="label">
                         <div class="login-pic"><img src="https://m.tianjihr.com/images/login/tianjihr-password-pic.png"></div>
-                        <input class="form-blur-btn" type="password" placeholder="密码">
+                        <input class="form-blur-btn password" type="password"  placeholder="密码">
                         <div id="eyes"></div>
                     </div>
                 <!-- </div> -->
         </div>
         <!-- 按钮 -->
+        <div class="errTip"></div>
         <input class="login-submit" type="submit" value="登录">
         <!--登录结束-->
         <div class="login-type">

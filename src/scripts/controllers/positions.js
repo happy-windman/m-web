@@ -29,7 +29,7 @@ class Position {
     })
 
     $('main .list-container ul').html(positionListHtml)
-    console.log($('main ul .list-container .list-item'))
+    // console.log($('main ul .list-container .list-item'))
 
     this.detailGo();
   }
@@ -127,7 +127,7 @@ class Position {
     bScroll.on('scroll', function () {
       if(location.hash=="#position")
   {
-      console.log(this.y)
+      // console.log(this.y)
       let op=Math.abs(this.y/100)
       if(this.y>0){
          $imgHead.addClass('up')

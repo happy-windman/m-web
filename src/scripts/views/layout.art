@@ -8,8 +8,8 @@
   </main>
   <footer>
     <ul>
-      <li data-page="position" class="active"><span class="yo-ico">&#xe622;</span>职位</li>
-      <li data-page="login" id="btn-center"><span class="yo-ico">&#xe626;
+      <li data-page="position" ><span class="yo-ico">&#xe622;</span>职位</li>
+      <li data-page="news" id="btn-center"><span class="yo-ico">&#xe626;
       </span>提醒</li>
       <li data-page="my" ><span class="yo-ico">
         &#xe665;</span>我的</li>

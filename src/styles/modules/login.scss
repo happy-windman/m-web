@@ -126,9 +126,15 @@
             margin: 0 .2rem;
         }
     }
-    
+     .errTip{
+            margin-top: .1rem;
+            text-align: right;
+            color:red;
+            font-size:0.14rem;
+        }
     #register-block{
         text-align: center;
+       
         a{
             font-size: .14rem;;
         }

@@ -2,6 +2,7 @@ import detailView from '../views/detail.art';
 const detailModel = require ('../models/detail')
 const BScroll = require('better-scroll')
 const positionListView = require('../views/position-list.art')
+import positionsController from './positions'
 
 class Detail{
     async render(){
@@ -47,7 +48,7 @@ class Detail{
             location.hash='position'
         })
 
-        
+        positionsController.detailGo();
          
         let bScroll= new BScroll.default($('.detail-container main').get(0), {
             probeType:2,

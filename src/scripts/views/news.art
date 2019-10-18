@@ -1,0 +1,25 @@
+<div class="news-container">
+    <div class="news-header">
+        <h2>提醒列表</h2>
+    </div>
+    <ul class="news-list">
+        <li>
+            <span class="ioc-1"></span>
+            <div class="cant_rt">
+                <h2>投递状态通知</h2><p class="p_text" >暂无新的投递状态</p>
+              </div>
+        </li>
+        <li>
+            <span class="ioc-1 ioc-2"></span>
+            <div class="cant_rt">
+                <h2>职位邀请通知</h2><p class="p_text" >暂无新的邀请状态</p>
+              </div>
+        </li>
+        <li>
+            <span class="ioc-1 ioc-3"></span>
+            <div class="cant_rt">
+                <h2>谁看过我</h2><p class="p_text" >暂无新的查看记录</p>
+              </div>
+        </li>
+    </ul>
+</div>

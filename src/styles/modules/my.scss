@@ -1,4 +1,8 @@
 .my-container{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-flow: column;
     .top{
         display: flex;
         flex-flow: column;
@@ -9,6 +13,24 @@
         background: coral;
         
         
+    }
+    .login-status{
+        margin-top:.1rem;
+        display: block;
+        color:#fff;
+        font-size: .16rem;
+        
+    }
+    .login-submit{
+        display: block;
+        width: 96%;
+        height: .5rem;
+        font-size: .16rem;
+        color: #fff;
+        border: none;
+        @include border-radius(5px);
+        background: #ff8502;
+        margin: 24px auto;
     }
     .headcon{
         margin-top: 30px;

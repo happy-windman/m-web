@@ -7,7 +7,9 @@
           </div>
         </div>
         
-    <div class="banner"><img class="banner-block" src="/assets/images/banner.jpg"></div>
+    <div class="banner">
+      
+      <img class="banner-block" src="/assets/images/banner.jpg"></div>
   </nav>
   <ul>
   </ul>

@@ -1,0 +1,62 @@
+.news-container{
+    .news-header{
+        width: 100%;
+        height: .53rem;
+        line-height: .53rem;
+        background: #ffffff;
+        font-size: .18rem;
+        color: #ff8502;
+        text-align: center;
+        h2{
+            font-weight: normal;
+        }
+    }
+    .news-list{
+        padding: 0;
+        background: #fff;
+        width: 100%;
+        margin-top: .1rem;
+        overflow: hidden;
+        li{
+            width: 100%;
+            height: .8rem;
+            padding: 0.2rem;   
+            @include border(1px,#ccc,solid) ;
+            display:flex;
+            align-items: center;
+
+        }
+        .ioc-1{
+            display: block;
+            width: 0.55rem;
+            height: 0.55rem;
+            background: url(https://m.tianjihr.com/images/tianjihr-nav-ico.png)left top no-repeat;
+            background-size: 218px auto;
+            
+           
+        } 
+        .ioc-2{
+                background-position: -54px top;
+            }
+            .ioc-3{
+
+                background-position: -109px top;
+            }
+        .cant_rt{
+            display: flex;
+            flex-flow: column;
+            color: #303030;
+            text-align: left;
+            padding-left:.2rem;
+            h2{
+                color: #303030;
+                font-size: .16rem;
+            }
+            p{
+                font-size: .13rem;
+                color: #aaaaaa;
+              
+            }
+        }
+    }
+}

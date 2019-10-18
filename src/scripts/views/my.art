@@ -1,7 +1,8 @@
 <div class="my-container">
     <div class="top">
         <div class="headcon"><img src="/assets/images/Photo.png"></div>
-        <a class="login-reg" >登录 / 注册</a>
+        <a class="login-reg" data-page="login" >登录 / 注册</a>
+        <a class="login-status"></a>
     </div>
     <div class="myList">
         <ul class="myResume">
@@ -15,5 +16,7 @@
             <li><i class="jianli"></i>我的简历</li>
         </ul>
     </div>
+
+    <input class="login-submit" type="submit" value="退出登录">
 
 </div>

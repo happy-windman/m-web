@@ -5,6 +5,7 @@ import loginController from '../controllers/login';
 import myController from '../controllers/my';
 import detailController from '../controllers/detail';
 import searchController from '../controllers/search';
+import newsController from '../controllers/news';
 
 class Router{
     constructor(){
@@ -21,8 +22,8 @@ class Router{
             loginController,
             myController,
             detailController,
-            searchController
-            
+            searchController,
+            newsController
             }
             pageControllers[hash+'Controller'].render();
     }
@@ -43,6 +44,7 @@ class Router{
     }
     handleHashchange(){
         let currentHash=location.hash.substr(1)||"position";
+        indexController.render();
         let reg=new RegExp('^\\w+','g');
         let path=reg.exec(currentHash);
         // console.log(path)
@@ -54,9 +56,8 @@ class Router{
     }
     
     setActive(hash){
-        // console.log(hash)
+        console.log(hash)
         $(`footer li[data-page=${hash}]`).addClass('active').siblings().removeClass('active');
-
     }
 }
 new Router();

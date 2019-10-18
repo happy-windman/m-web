@@ -51,9 +51,7 @@ class search {
 
      
       //点击城市事件
-        $('.city-list li').on('tap', function () {
-          console.log(2222222)
-          
+        $('.city-list li').on('tap', function () { 
           that.workplace=$(this).attr('data-cityCode');
           that.renderList()
            $('.city').html(`${$(this).html()}<span></span>`)
@@ -170,7 +168,7 @@ class search {
     //控制城市列表
  
     $('.city').on('tap', ()=> {
-      console.log(this.cityOnoff)
+  
       if (this.cityOnoff == false) {
         this.cityOnoff = true;
         $('.city-block').show()
