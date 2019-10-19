@@ -31,7 +31,8 @@
                 <!-- </div> -->
         </div>
         <div class="errTip"></div>
-        <input class="login-submit" id="register-submit" type="submit" value="注册">
+        <button class="login-submit" id="register-submit">注册</button>
+        <!-- <input class="login-submit" id="" type="submit" value="注册"> -->
 
         <div class="register-agreement">
                 <input type="checkbox" class="agree-choose">注册代表您已经同意<a >天基人才网用户协议</a></div>
@@ -57,7 +58,8 @@
         </div>
         <!-- 按钮 -->
         <div class="errTip"></div>
-        <input class="login-submit" type="submit" value="登录">
+        <button class="login-submit" id="login-submit2">登录</button>
+        <!-- <input class="login-submit"  id=""type="submit" value=""> -->
         <!--登录结束-->
         <div class="login-type">
             <a href="#">切换验证码登录</a>

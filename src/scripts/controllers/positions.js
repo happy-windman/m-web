@@ -2,6 +2,8 @@ const positionView = require('../views/position.art')
 const positionListView = require('../views/position-list.art')
 const postionModel = require('../models/postion')
 const BScroll = require('better-scroll')
+
+import Swiper from 'swiper'
 import indexController from './index'
 
 class Position {
@@ -163,7 +165,24 @@ class Position {
     // $('#root').on('click','#bannerScroll',function(){
     //   location.hash=$(this).attr('data-page')
     // })
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true, // 循环模式选项
+      autoplay: {
+        delay: 2000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        },
+      // 如果需要分页器
+      // effect : 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+    })        
+    
+      
   }
+  
   
 }
 

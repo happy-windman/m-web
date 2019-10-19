@@ -17,6 +17,6 @@
         </ul>
     </div>
 
-    <input class="login-submit" type="submit" value="退出登录">
+    <button class="login-submit" id="btn-01">退出登录</button>
 
 </div>

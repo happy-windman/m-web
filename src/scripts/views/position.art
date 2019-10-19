@@ -5,13 +5,27 @@
           <div class="text-block" >
             <img src="/assets/images/tianjihr-search-pic.png">请输入关键词
           </div>
+          
         </div>
         
     <div class="banner">
-      
-      <img class="banner-block" src="/assets/images/banner.jpg"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="banner-block" src="/assets/images/banner.jpg"></div>
+                <div class="swiper-slide"><img class="banner-block" src="https://img02.zhaopin.cn/img_button/201910/11/tietaxin_181940980003.jpg?x-oss-process=image/resize,m_lfit,h_410,w_700" height="209px"></div>
+                <div class="swiper-slide"><img class="banner-block" src="https://img00.zhaopin.cn/img_button/201909/27/8_115325191898.jpg?x-oss-process=image/resize,m_lfit,h_410,w_700" height="209px"></div>
+                
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+     
+      </div> 
   </nav>
   <ul>
+      
   </ul>
   <div class="foot">
       <img src="/assets/images/arrow.png"/>

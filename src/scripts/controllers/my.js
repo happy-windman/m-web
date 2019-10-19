@@ -17,14 +17,28 @@ class My{
             $('.login-status').html(JSON.parse(loginStatus).username);
             $('.login-submit').show();
         }
-        $('.login-submit').on('tap',function(){
-            localStorage.removeItem('loginStatus')
-            window.location.reload();
-        })
+        // $('.login-submit').on('tap',function(){
+        //     localStorage.removeItem('loginStatus')
+        //     window.location.reload();
+        // })
 
         $('.login-reg').on('tap',function(){
             location.hash=$(this).attr('data-page');
         })
+
+        $('#btn-01').on('click',function() {
+            var dialog1 = $('body').dialog({
+                type : 'confirm',
+                style: 'android',
+                titleText: '提示',
+                content: '您确定要退出吗？',
+                onClickConfirmBtn:function(){
+                    localStorage.removeItem('loginStatus')
+                    dialog1.close();
+                    window.location.reload();
+                },
+            });
+        });
     }
 }
 export default new My();

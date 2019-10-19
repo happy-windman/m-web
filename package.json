@@ -26,6 +26,7 @@
     "art-template": "^4.13.2",
     "art-template-loader": "^1.4.3",
     "better-scroll": "^1.15.2",
-    "string-loader": "0.0.1"
+    "string-loader": "0.0.1",
+    "swiper": "^5.1.0"
   }
 }
