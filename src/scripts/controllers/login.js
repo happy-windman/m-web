@@ -87,6 +87,7 @@ class login {
         //     }
         // })
         $(document).on('click', '#register-submit', function () {
+       
             if (reg1 && reg2 && reg3) {
                 var users = []
                 if (that.userData) {
@@ -131,6 +132,7 @@ class login {
         this.userData = localStorage.getItem('user')
         $(document).on('click', '#login-submit2', function () {
         // $('#login-block .login-submit').bind('click', function () {
+          
             if (that.userData) {
                 let users = JSON.parse(that.userData);
                 for (var i = 0; i < users.length; i++) {
@@ -161,10 +163,13 @@ class login {
                         }, 500);
                         //--
                     }
+                 
                 }
-                if (login == false) {
-                    $('#login-block .errTip').html("请输入正确的账号和密码")
-                }
+                
+            }
+            if (login == false) {
+                    
+                $('#login-block .errTip').html("请输入正确的账号和密码")
             }
         })
     }
@@ -177,11 +182,13 @@ class login {
         $('#register-block').hide()
 
         $('.login-jump').on('tap', function () {
+            
             $('#register-block').show();
             $('#login-block').hide()
         })
 
         $('.register-login a').on('tap', function () {
+         
             $('#register-block').hide();
             $('#login-block').show()
         })

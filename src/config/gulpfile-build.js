@@ -12,7 +12,7 @@ function copyhtml() {
   return src(['../../build/rev/**/*.json','../*.html'])
     .pipe(revCollector())
     .pipe(dest('../../build/'))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 }
 
 // copylibs
@@ -36,7 +36,7 @@ function packSCSS() {
     .pipe(dest('../../build/styles'))  
     .pipe(rev.manifest())
     .pipe(dest('../../build/rev/styles/'))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 }
 
 // JS模块化
@@ -66,7 +66,7 @@ function packJS() {
     .pipe(dest('../../build/scripts'))
     .pipe(rev.manifest())
     .pipe(dest('../../build/rev/scripts/'))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 }
 
 

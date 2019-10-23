@@ -1,0 +1,176 @@
+.collection-container{
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .detail-header{
+    background: #fff;
+    height: .53rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ul{
+        width: 50%;
+        display: flex;
+        height: .35rem;
+        line-height: .33rem;
+        font-size: .16rem;
+        box-sizing: border-box;
+        
+        li{ 
+            text-align: center;
+            flex: 1;
+            width: 50%;
+            color: #ff8502;
+            background: #fff;
+        }
+        li:nth-child(1){
+            @include border-radius(4px  0px  0 4px);
+            
+        }
+        
+
+        .detail-active{
+            color: #fff;
+            background: #ff8502;
+        }
+    }
+
+        a{ 
+        color:#ff8502;
+        display: flex;
+        width: .42rem;
+        height: .42rem;
+        justify-content: center;
+        align-items: center;
+        img{
+            display: block;
+            width: 50%;
+            height: 50%;
+            
+        }
+    }
+
+    }
+    .colleaction-content-wrap{
+      // margin-top:.1rem ;
+        width: 100%;
+        flex: 1;
+        overflow: hidden;
+      .content-wrap{
+       
+        .colleaction-content{
+          width: 100%;
+          padding: 0 .1rem;
+          ul {
+            width: 100%;
+            margin: .1rem auto 0;
+            padding-bottom: 0px;
+        
+            li.list-item {
+              display: flex;
+              width: 100%;
+              overflow: hidden;
+              background: #fff;
+              border-radius: 4px;
+              margin: 0 auto;
+              overflow: hidden;
+              margin-bottom: 10px;
+              height: 1.28rem;
+              padding:  0 .1rem;
+              .item-title{
+                padding: 8px 0 4px 0;
+                overflow: hidden;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content:  space-around; 
+                // @include ellipsis(null,1);
+                .item-up{
+                  display: flex;
+                  justify-content:space-between;
+                  padding-bottom: .05rem;
+                  @include border(0 0 1px 0, rgb(58, 58, 58));
+                .item-up-left{
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  overflow: hidden;
+                  h2{
+                    font-size: .18rem;
+                    font-weight: normal;
+                    @include ellipsis(null,1);
+                    width: 100%;
+                  }
+                  >span{
+                    @include ellipsis(null,1);
+                    width: 100%;
+                  }
+                 
+                }
+                .item-up-right{
+                  width: 100%;
+                  text-align: right;
+                  display: flex;
+                  flex-direction: column;
+                  h3{
+                    width: 100%;
+                    font-weight: normal;
+                    font-size: .16rem;
+                    color:orange;
+                  }
+                 
+                }  
+                }
+        
+                .item-down{
+                  width: 100%;
+                  font-size: .12rem;
+                  color:#aaa;
+                  span{
+                    color:orange;
+                  }
+                }
+    
+                .choose{
+                  width: 100%;
+                  display: flex;
+                  >div{
+                    height: .3rem;
+                    margin-top: .08rem;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                    
+                      width: .16rem;
+                      height: .16rem;
+                    }
+                    i{
+                      color: #303030;
+                      font-size: .14rme;
+                      margin-left: .04rem;
+                    }
+                  }
+                  .choose-left{
+                    // span{
+                    //   background: url('/assets/images/quxiao.jpg') no-repeat;
+                    //   background-size:100% 100% ;
+                    // }
+                  }
+                  .choose-right{
+                    // span{
+                    //   background: url('/assets/images/fasong.jpg') no-repeat;
+                    //   background-size:100% 100% ;
+                    // }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

@@ -39,6 +39,12 @@ class My{
                 },
             });
         });
+        $('.collection').on('tap',function(){
+            if(localStorage.getItem('loginStatus'))
+            location.hash='#collection';
+            else location.hash='#login'
+        })
+
     }
 }
 export default new My();

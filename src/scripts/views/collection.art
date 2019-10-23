@@ -1,0 +1,46 @@
+<div class="collection-container">
+    <header class="detail-header">
+        <a class="return"><img src="https://m.tianjihr.com/images/common/return.png"></a>
+        <ul><li>我的收藏</li></ul>
+        <a class="return">举报</a>
+    </header>
+    <div class="colleaction-content-wrap">
+        <div class="content-wrap">
+          <div class="colleaction-content">
+            <ul>
+              <!-- <li class="list-item">
+                <div class="item-title">
+                  <div class="item-up">
+                    <div class="item-up-left">
+                      <h2></h2>
+                      <span></span>
+                    </div>
+                    <div class="item-up-right"><span>今天</span>
+                      <h3></h3>
+                    </div>
+    
+                  </div>
+                  <div class="item-down">
+                    <span class="yo-ico">&#xe61a;
+                    </span>
+                    <span class="yo-ico">&#xe61c;
+    
+                    </span>
+                    <span class="yo-ico">&#xe62a;
+                    </span>
+                  </div>
+                  <div class="choose">
+                    <div class="choose-left">
+                      <span></span><i>取消收藏</i>
+                    </div>
+                    <div class="choose-right">
+                      <span></span><i>发送简历</i>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>

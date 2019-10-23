@@ -62,6 +62,7 @@
     下拉加载更多
       </div>
     </div>
+    <div class="search-info"><div class="no-position"></div><span>暂无职位</span></div>
   </main>
   <!-- <footer>3</footer> -->
 </div>

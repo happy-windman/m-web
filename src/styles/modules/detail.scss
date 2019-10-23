@@ -72,12 +72,18 @@
         width: 100%;
         background: grey;
         display: flex;
+       
         .keep{
             display: flex;
             justify-content: center;
             align-items: center;
             flex: 1;
             background: #7ecef4;
+            .active{
+                background: url(https://m.tianjihr.com/images/firm-home/five-active.png) no-repeat;
+                background-size: 100% 100%;
+                background-position: 0 0;
+            }
             span{
                 display: block;
                 
@@ -233,7 +239,7 @@
         .detail-list {
             margin: 0;
             width: 100%;
-            margin-top:0.15rem;
+            
             li.list-item {
               display: flex;
               width: 100%;

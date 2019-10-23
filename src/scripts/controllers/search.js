@@ -19,6 +19,7 @@ class search {
     this.keyword = '';
     this.workplace='';
     this.cityOnoff = false;
+    this.totalCount = 0
   }
 
   renderer(list) {
@@ -53,6 +54,8 @@ class search {
       //点击城市事件
         $('.city-list li').on('tap', function () { 
           that.workplace=$(this).attr('data-cityCode');
+          
+          
           that.renderList()
            $('.city').html(`${$(this).html()}<span></span>`)
           $('.city-block').hide();
@@ -65,17 +68,18 @@ class search {
   }
 
   async renderList() {
+    this.pageNo=0;
+          this.pageSize=10;
     let that = this;
     $('.search-scroll').show();
     $('.hot-search').hide();
     $('.search-screen').show();
-    
-   
+     
 
     if ($('.search-block .text-block').val()!='')
       this.keyword = $('.search-block .text-block').val()
 
-
+    
     let searchList = await positionModel.getSearch(
       {
         keyword: this.keyword,
@@ -85,12 +89,29 @@ class search {
       }
     );
     let list = searchList.list;
-    let searchListHtml = positionListView({ list });
-    $('.search-scroll ul').html(searchListHtml);
-    this.list=list
-    this.bScroll.refresh()
-    this.bScroll.scrollTo(0, 0)
-    positionsController.detailGo();
+    that.totalCount=searchList.count;
+  if(searchList.count!=0){
+    console.log(searchList)
+  $('.search-info').hide();
+  let searchListHtml = positionListView({ list });
+  $('.search-scroll ul').html(searchListHtml);
+  this.list=list
+  this.bScroll.refresh()
+  this.bScroll.scrollTo(0, 0)
+  positionsController.detailGo();
+  // console.log($(".search-scroll ul").height()/100<searchList.count)
+  if($(window).height()/100>searchList.count)
+  {
+    $(".search-scroll .foot").hide()
+  }
+  else {
+    $(".search-scroll .foot").show()
+  }
+  }
+  else {
+    $('.search-scroll').hide();
+    $('.search-info').show();
+  }
     // $('.city').html(`${this.workplace}<span></span>`)
      $('.search-block .text-block').val(this.keyword);
   }
@@ -120,13 +141,14 @@ class search {
     let $imgFoot = $('.foot img')
       //-------------------------------
       bScroll.on('scrollEnd', async function () {
-        console.log(this.y)
+        console.log(Math.floor (that.totalCount/that.pageSize) >Math.floor(that.pageNo/that.pageSize))
     
         // 上拉加载更多
-        if (this.maxScrollY >= this.y) {
+        if (this.maxScrollY >= this.y&&Math.floor (that.totalCount/that.pageSize) >Math.floor(that.pageNo/that.pageSize)) {
+          $(".search-scroll .foot").show()
           that.pageNo = that.pageNo + that.pageSize;
           $imgFoot.attr('src', '/assets/images/ajax-loader.gif')
-          console.log(that.keyword)
+       
           let result = await positionModel.getSearch({
             keyword: that.keyword,
             workplace:that.workplace,
@@ -134,6 +156,7 @@ class search {
             pageSize: that.pageSize
           })
           let list = result.list;
+         
           // 1.将原来数据list和现在返回的数据做拼接，
           // 2.重新渲染
           that.list = [...that.list, ...list]
@@ -141,6 +164,9 @@ class search {
           bScroll.refresh()
           bScroll.scrollBy(0, 0)
          
+        }
+        else {
+          $(".search-scroll .foot").hide()
         }
       })
   
@@ -168,7 +194,6 @@ class search {
     //控制城市列表
  
     $('.city').on('tap', ()=> {
-  
       if (this.cityOnoff == false) {
         this.cityOnoff = true;
         $('.city-block').show()

@@ -15,7 +15,7 @@
                         <div class="logo-block"><img
                                 src="{{result.wechat_qrcode}}">
                         </div>
-                        <div class="abstract-title">河南太极开来置业有限公司
+                        <div class="abstract-title">{{currentCommon}}
                         </div>
                         <div class="abstract-info">
                             <span>郑州市</span><span>&nbsp;/&nbsp;房地产开发|房地产营销策划</span><span>&nbsp;/&nbsp;民营</span>

@@ -7,13 +7,13 @@
     <div class="myList">
         <ul class="myResume">
             <li><i class="jianli"></i>我的简历</li>
-            <li><i class="jianli"></i>我的简历</li>
-            <li><i class="jianli"></i>我的简历</li>
+            <li class="collection" ><i class="jianli shoucang"></i>我的收藏</li>
+            <li><i class="jianli heimingdan"></i>我的黑名单</li>
         </ul>
         <ul class="myResume">
-            <li><i class="jianli"></i>我的简历</li>
-            <li><i class="jianli"></i>我的简历</li>
-            <li><i class="jianli"></i>我的简历</li>
+            <li><i class="jianli zhanghao"></i>我的账号</li>
+            <li><i class="jianli fankui"></i>我的反馈</li>
+            <li><i class="jianli gengduo"></i>我的更多</li>
         </ul>
     </div>
 

@@ -3,6 +3,7 @@ const detailModel = require ('../models/detail')
 const BScroll = require('better-scroll')
 const positionListView = require('../views/position-list.art')
 import positionsController from './positions'
+import collection from './collection';
 
 class Detail{
     async render(){
@@ -57,7 +58,47 @@ class Detail{
           
           bScroll.refresh();
           
-        console.log(bScroll.y)
+   
+          let onCollection=true;
+          $('.keep').on('tap',function(){
+
+              if(onCollection==true)
+            {
+            let collections=localStorage.getItem('collection')
+            let collectionsArr=[]
+            if(collections)
+            {collectionsArr=JSON.parse(collections)}
+            collectionsArr.push(result)
+            localStorage.setItem('collection',JSON.stringify(collectionsArr))
+
+            var toast5 = $(document).dialog({
+                type: 'toast',
+                infoIcon: '/assets/images/loading.gif',
+                infoText: '正在收藏',
+            });
+            setTimeout(function () {
+                toast5.update({
+                    infoIcon: '/assets/images/success.png',
+                    infoText: '收藏成功',
+                    autoClose: 800,
+                });   
+            }, 500);
+           
+            
+                $('.keep span').addClass('active')
+            }
+            else{
+                let collections=localStorage.getItem('collection')
+                let collectionsArr=[]
+                if(collections)
+                {collectionsArr=JSON.parse(collections)}
+                collectionsArr.pop()
+                localStorage.setItem('collection',JSON.stringify(collectionsArr))
+                $('.keep span').removeClass('active')
+            }
+            onCollection=!onCollection;
+          })
+
     }
 }
 export default new Detail;

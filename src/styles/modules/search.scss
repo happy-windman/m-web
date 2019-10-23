@@ -3,6 +3,24 @@
   flex-flow: column;
   height: 100%;
 
+.search-info{
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  .no-position{
+    width: 1rem;
+    height: 1.2rem;
+    background: url(https://m.tianjihr.com/images/Collection/no-list-pic.png) no-repeat;
+    background-size: 100px auto;
+    background-position: 0 0;
+    margin: 0 auto;
+  }
+  span{
+    font-size: .16rem;
+  }
+}
+
+
   .city-block{
     display: flex;
     position: absolute;

@@ -6,6 +6,7 @@ import myController from '../controllers/my';
 import detailController from '../controllers/detail';
 import searchController from '../controllers/search';
 import newsController from '../controllers/news';
+import collectionController from '../controllers/collection';
 
 class Router{
     constructor(){
@@ -23,7 +24,8 @@ class Router{
             myController,
             detailController,
             searchController,
-            newsController
+            newsController,
+            collectionController
             }
             pageControllers[hash+'Controller'].render();
     }

@@ -797,7 +797,8 @@ a {
 .list-container nav {
   position: relative; }
   .list-container nav .banner-block {
-    width: 100%; }
+    width: 100%;
+    height: 2.09rem; }
 
 .list-container ul {
   width: 96%;
@@ -1081,6 +1082,21 @@ a {
       height: .55rem;
       background: url(/assets/images/tianjihr-jianli.png) no-repeat;
       background-size: 100% 100%; }
+    .my-container .myList .shoucang {
+      background: url(https://m.tianjihr.com/images/home/tianjihr-shouchang.png);
+      background-size: 100% 100%; }
+    .my-container .myList .heimingdan {
+      background: url(https://m.tianjihr.com/images/home/tianjihr-heimingdan.png);
+      background-size: 100% 100%; }
+    .my-container .myList .zhanghao {
+      background: url(https://m.tianjihr.com/images/home/tianjihr-zhanghao.png);
+      background-size: 100% 100%; }
+    .my-container .myList .fankui {
+      background: url(https://m.tianjihr.com/images/home/tianjihr-fankui.png);
+      background-size: 100% 100%; }
+    .my-container .myList .gengduo {
+      background: url(https://m.tianjihr.com/images/home/tianjihr-gengduo.png);
+      background-size: 100% 100%; }
 
 .login-container {
   padding: 2%;
@@ -1304,6 +1320,10 @@ a {
       align-items: center;
       flex: 1;
       background: #7ecef4; }
+      .detail-container footer .keep .active {
+        background: url(https://m.tianjihr.com/images/firm-home/five-active.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0; }
       .detail-container footer .keep span {
         display: block;
         background: url(https://m.tianjihr.com/images/firm-home/firm-bottom-pic.png) no-repeat;
@@ -1448,8 +1468,7 @@ a {
           color: #ff8502; }
     .detail-container .detail-content .detail-list {
       margin: 0;
-      width: 100%;
-      margin-top: 0.15rem; }
+      width: 100%; }
       .detail-container .detail-content .detail-list li.list-item {
         display: flex;
         width: 100%;
@@ -1642,6 +1661,19 @@ a {
   display: flex;
   flex-flow: column;
   height: 100%; }
+  .search-container .search-info {
+    display: none;
+    text-align: center;
+    margin-top: 1rem; }
+    .search-container .search-info .no-position {
+      width: 1rem;
+      height: 1.2rem;
+      background: url(https://m.tianjihr.com/images/Collection/no-list-pic.png) no-repeat;
+      background-size: 100px auto;
+      background-position: 0 0;
+      margin: 0 auto; }
+    .search-container .search-info span {
+      font-size: .16rem; }
   .search-container .city-block {
     display: flex;
     position: absolute;
@@ -1968,6 +2000,162 @@ main ul {
     .news-container .news-list .cant_rt p {
       font-size: .13rem;
       color: #aaaaaa; }
+
+.collection-container {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .collection-container .detail-header {
+    background: #fff;
+    height: .53rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .collection-container .detail-header ul {
+      width: 50%;
+      display: flex;
+      height: .35rem;
+      line-height: .33rem;
+      font-size: .16rem;
+      box-sizing: border-box; }
+      .collection-container .detail-header ul li {
+        text-align: center;
+        flex: 1;
+        width: 50%;
+        color: #ff8502;
+        background: #fff; }
+      .collection-container .detail-header ul li:nth-child(1) {
+        border-radius: 4px 0px 0 4px;
+        -webkit-background-clip: padding-box !important;
+        background-clip: padding-box !important; }
+      .collection-container .detail-header ul .detail-active {
+        color: #fff;
+        background: #ff8502; }
+    .collection-container .detail-header a {
+      color: #ff8502;
+      display: flex;
+      width: .42rem;
+      height: .42rem;
+      justify-content: center;
+      align-items: center; }
+      .collection-container .detail-header a img {
+        display: block;
+        width: 50%;
+        height: 50%; }
+  .collection-container .colleaction-content-wrap {
+    width: 100%;
+    flex: 1;
+    overflow: hidden; }
+    .collection-container .colleaction-content-wrap .content-wrap .colleaction-content {
+      width: 100%;
+      padding: 0 .1rem; }
+      .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul {
+        width: 100%;
+        margin: .1rem auto 0;
+        padding-bottom: 0px; }
+        .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item {
+          display: flex;
+          width: 100%;
+          overflow: hidden;
+          background: #fff;
+          border-radius: 4px;
+          margin: 0 auto;
+          overflow: hidden;
+          margin-bottom: 10px;
+          height: 1.28rem;
+          padding: 0 .1rem; }
+          .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title {
+            padding: 8px 0 4px 0;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; }
+            .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: .05rem;
+              position: relative; }
+              .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up::after {
+                pointer-events: none;
+                position: absolute;
+                z-index: 999;
+                top: 0;
+                left: 0;
+                content: "\0020";
+                border-color: #3a3a3a;
+                border-style: solid;
+                border-width: 0 0 1px 0;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0; }
+                @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+                  .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up::after {
+                    width: 100%;
+                    height: 100%; } }
+                @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+                  .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up::after {
+                    width: 200%;
+                    height: 200%;
+                    -webkit-transform: scale(0.5);
+                    transform: scale(0.5); } }
+                @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+                  .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up::after {
+                    width: 300%;
+                    height: 300%;
+                    -webkit-transform: scale(0.33333);
+                    transform: scale(0.33333); } }
+              .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up .item-up-left {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                overflow: hidden; }
+                .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up .item-up-left h2 {
+                  font-size: .18rem;
+                  font-weight: normal;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 100%; }
+                .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up .item-up-left > span {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  width: 100%; }
+              .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up .item-up-right {
+                width: 100%;
+                text-align: right;
+                display: flex;
+                flex-direction: column; }
+                .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-up .item-up-right h3 {
+                  width: 100%;
+                  font-weight: normal;
+                  font-size: .16rem;
+                  color: orange; }
+            .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-down {
+              width: 100%;
+              font-size: .12rem;
+              color: #aaa; }
+              .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .item-down span {
+                color: orange; }
+            .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .choose {
+              width: 100%;
+              display: flex; }
+              .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .choose > div {
+                height: .3rem;
+                margin-top: .08rem;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center; }
+                .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .choose > div span {
+                  width: .16rem;
+                  height: .16rem; }
+                .collection-container .colleaction-content-wrap .content-wrap .colleaction-content ul li.list-item .item-title .choose > div i {
+                  color: #303030;
+                  font-size: .14rme;
+                  margin-left: .04rem; }
 
 ::-moz-focus-inner {
   border-color: transparent; }
