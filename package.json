@@ -28,6 +28,6 @@
     "art-template-loader": "^1.4.3",
     "better-scroll": "^1.15.2",
     "string-loader": "0.0.1",
-    "swiper": "^5.1.0"
+    "swiper": "^6.5.1"
   }
 }
